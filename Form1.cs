@@ -44,12 +44,12 @@ namespace algoritm
                 A[i] = (char)(65 + i);
                 C[i] = 0;
             }
-            listBox1.Items.Clear();
+            Список.Items.Clear();
         //algoritm perestanovki
         L1:;//metka
             st = "";
             for (int i = 0; i < n; i++) st = st + " " + A[i];
-            listBox1.Items.Add(st);
+            Список.Items.Add(st);
         //
             k = n - 2;
         //nachalo perestanovki
@@ -62,7 +62,7 @@ namespace algoritm
             C[k] = 0;
             k--;
             if (k >= 0) goto L2;
-            listBox1.Items.Add("Шайтанама, все сделяль");
+            Список.Items.Add("Шайтанама, все сделяль");
             //koneц
         }
 
@@ -75,7 +75,7 @@ namespace algoritm
             A = new char[n];
             C = new int[m];
             for (int i = 0; i < n; i++) A[i] = (char)(i + 65);
-            listBox1.Items.Clear();
+            Список.Items.Clear();
             C[0] = 0;
             k = 0;
         //algoritm sochetanii
@@ -83,7 +83,7 @@ namespace algoritm
             for (int i = k + 1; i < m; i++) C[i] = C[i - 1] + 1;
             st = "";
             for (int i = 0; i < m; i++) st = st + "  " + A[C[i]];
-            listBox1.Items.Add(st);
+            Список.Items.Add(st);
             //
             k = m - 1;
         //nachalo sochetanii
@@ -92,7 +92,7 @@ namespace algoritm
             if (C[k] <= n - m + k) goto L1;
             k--;
             if (k >= 0) goto L2;
-            listBox1.Items.Add("Поставьте 5 звезд приложению");
+            Список.Items.Add("Поставьте 5 звезд приложению");
         }
 
         //----------------------кнопка 3------------------------------------------------------//
@@ -105,7 +105,7 @@ namespace algoritm
             CC = new int[m];
             A = new char[m];
             C = new int[m];
-            listBox1.Items.Clear();
+            Список.Items.Clear();
             for (int i = 0; i < n; i++) AA[i] = (char)(65 + i);
             CC[0] = 0;
             k = 0;
@@ -122,7 +122,7 @@ namespace algoritm
             L1:;//metka
             st = "";
             for (int i = 0; i < m; i++) st = st + " " + A[i];
-            listBox1.Items.Add(st);
+            Список.Items.Add(st);
             //
         //nachalo perestanovki
         L2:;
@@ -144,7 +144,7 @@ namespace algoritm
             k--;
             if (k >= 0) goto LL2;
             for (int i = 0; i < n; i++) AA[i] = (char)(65 + i);
-            listBox1.Items.Add("Поставьте 5 звезд приложению");
+            Список.Items.Add("Поставьте 5 звезд приложению");
 
 
         }

@@ -33,7 +33,7 @@ namespace algoritm
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Список = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -77,14 +77,14 @@ namespace algoritm
             this.label2.TabIndex = 3;
             this.label2.Text = "Кол-во выбераемых";
             // 
-            // listBox1
+            // Список
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 70);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(249, 372);
-            this.listBox1.TabIndex = 4;
+            this.Список.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.Список.ItemHeight = 16;
+            this.Список.Location = new System.Drawing.Point(12, 70);
+            this.Список.Name = "Список";
+            this.Список.Size = new System.Drawing.Size(570, 372);
+            this.Список.TabIndex = 4;
             // 
             // button1
             // 
@@ -134,7 +134,7 @@ namespace algoritm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.Список);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -153,7 +153,7 @@ namespace algoritm
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox Список;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
